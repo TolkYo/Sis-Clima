@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/909becd275.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h3>Clima Hoje</h3>
+            <div class="form-input-container">
+                <input type="text" id="nomeCidade" placeholder="Digite uma cidade">
+                <button id="procurar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div id="dadosClima">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="cidade">Manaus</span>
+            </h2>
+            <p id="temperature"><span>36</span>&deg;C</p>
+            <div id="descricao-container">
+                <p id="descricaoClima">Ensolarado</p>
+                <img src="http://openweathermap.org/img/wn/01d.png" alt="Condições do Tempo" id="weather-icon">
+            </div>
+            <div id="detalhes-container">
+                <p id="umidade">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>99%</span>
+                </p>
+                <p id="vento">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>5Km/h</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
