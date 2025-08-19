@@ -16,12 +16,12 @@
 <body>
     <div class="container">
         <div class="form">
-            <h3>Clima Hoje</h3>
+            <h2>Clima Hoje</h2>
             <div class="form-input-container">
                 <input type="text" id="nomeCidade" placeholder="Digite uma cidade">
                 <button id="procurar">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
+                </button>                
             </div>
         </div>
         <div id="dadosClima">
@@ -37,7 +37,7 @@
             <div id="detalhes-container">
                 <p id="umidade">
                     <i class="fa-solid fa-droplet"></i>
-                    <span>99%</span>
+                    <span>75%</span>
                 </p>
                 <p id="vento">
                     <i class="fa-solid fa-wind"></i>
@@ -47,4 +47,23 @@
         </div>
     </div>
 </body>
+
+<script>
+    
+    const descClima = document.getElementById("descricaoClima");
+
+    const observer = new MutationObserver(() => {
+        const valorDescClima = descClima.innerText.trim().toLowerCase();
+        //console.log("Novo valor:", valorDescClima);
+
+        if (valorDescClima.includes("algumas nuvens")) {
+            console.log("deu certo");
+        }
+    });
+
+    observer.observe(descClima, { childList: true, characterData: true, subtree: true });
+    
+    
+   
+  </script>
 </html>
