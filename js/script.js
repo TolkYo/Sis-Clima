@@ -33,7 +33,7 @@ function atualizarUI(data) {
         `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`
     );
     umidityElement.innerText = `${data.main.humidity}%`;
-    windElement.innerText = `${data.wind.speed} km/h`;
+    windElement.innerText = `${data.wind.speed} km/h`; 
 }
 
 const mostraClima = async () => {
